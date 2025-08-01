@@ -32,10 +32,12 @@ MANIFEST
 # IDEA
 .idea
 
-# Images
-ImagesCaptured/*.jpg
-# But do not ignore the folder itself
-!ImagesCaptured
+ImagesCaptured
+
+## Images
+#ImagesCaptured/*.jpg
+## But do not ignore the folder itself
+#!ImagesCaptured
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
