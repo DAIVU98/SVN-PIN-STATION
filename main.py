@@ -10,6 +10,7 @@
 # ------------------------------------------------------------------
 #  Codes
 # ------------------------------------------------------------------
+import engine.splash as splash
 import datetime, time
 import logging
 import multiprocessing as mp
@@ -101,6 +102,7 @@ class MainWindow(QMainWindow):
         self.event_update = QTimer(self)
         self.event_update.timeout.connect(self._update_status)
         self.event_update.start(100)
+        splash.close()
 
     # ------------------------------------------------------------------
     def _init_table(self):

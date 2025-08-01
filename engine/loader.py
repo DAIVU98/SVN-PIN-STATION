@@ -56,13 +56,12 @@ def load_markdown(readMe):
     </body>
     </html>
     """
-
-    with open(f"{markdown_path.stem}.html", "w", encoding="utf-8") as f:
+    with open(f"{generated_html_path}", "w", encoding="utf-8") as f:
         f.write(html)
 
     # base_path = QUrl.fromLocalFile(str(PROJECT_ROOT) + "/")
     readMe.setPage(ExternalLinkPage(readMe))
-    readMe.setUrl(QUrl.fromLocalFile(os.path.abspath(f"{markdown_path.stem}.html")))
+    readMe.setUrl(QUrl.fromLocalFile(os.path.abspath(f"{generated_html_path}")))
     
 # ------------------------------------------------------------------
 #  Ruamel format, delete blank lines
@@ -180,6 +179,7 @@ cfg_path = PROJECT_ROOT / "config" / "config.yaml"
 usr_cfg_path = PROJECT_ROOT / "config" / "userConfig.yaml"
 folder_cam = PROJECT_ROOT / "ImagesCaptured"
 markdown_path = PROJECT_ROOT / "README.md"
+generated_html_path = PROJECT_ROOT / "README.html"
 
 if not folder_cam.exists():
     os.makedirs(folder_cam)
