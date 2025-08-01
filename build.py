@@ -9,7 +9,7 @@ cmd = [
     "main.py",
     "--noconfirm",
     "--noconsole",
-    # "--onedir",
+    "--onedir",
     "--clean",
     "--name", "FullBatteryApp",
     "--add-data", "camera;camera",

@@ -21,7 +21,7 @@ try:
     os = ldr.os
     yaml = ldr.YAML()
     DEBUG = ldr.usr_cfg["main"]["debug"]
-except: 
+except:
     # ------------------------------------------------------------------
     #  Added lib imports trick after file relocation and refactoring
     # ------------------------------------------------------------------
@@ -421,11 +421,11 @@ class MainWindow(QMainWindow):
 # ╭────────────────────────────────────────────────────────────────────────────╮
 # │                                 Entrypoint                                 │
 # ╰────────────────────────────────────────────────────────────────────────────╯
-if __name__ == "__main__":    
+if __name__ == "__main__":
+    
     mp.freeze_support()
     mp.set_start_method("spawn", force=True)
-    try: from engine import task_kill
-    except: import task_kill
+    from engine import task_kill
     task_kill.clean()
     
     arm1_status = mp.Manager().dict({
