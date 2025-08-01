@@ -67,6 +67,8 @@
 
 <!-- Iframe doesn't work on Github, very sad
 <iframe width="448" height="252" src="https://www.youtube.com/embed/JaT667Cp2rM?loop=1" frameborder="0" > </iframe> -->
+<div align="center"><img src="assets/thumbnail.jpg" alt="thumbnail" style="width:80vw;"/></div>
+
 </div>
 
 This project focuses on building a demo of a fully automated battery sorting station that combines precise mechanical operation with camera vision. The system features two JAKA MiniCobots and two high-resolution industrial cameras with a main UI to display the system status and a settings UI for more advanced control of the system.
