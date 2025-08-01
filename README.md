@@ -8,7 +8,7 @@
 
 <!-- PROJECT LOGO -->
 <br />
-  <img src="./assets/logoSVN-cropped.png" alt="Logo" style="width:40vw">
+  <img src="./assets/logoSVN-cropped.png" alt="Logo" style="width:200vw">
 
 <h3 align="center">Battery Sorting Station - SVN Automation</h3>
   <p align="center">
@@ -67,7 +67,7 @@
 
 <!-- Iframe doesn't work on Github, very sad
 <iframe width="448" height="252" src="https://www.youtube.com/embed/JaT667Cp2rM?loop=1" frameborder="0" > </iframe> -->
-<div align="center"><img src="assets/thumbnail.jpg" alt="thumbnail" style="width:80vw;"/></div>
+<div align="center"><img src="assets/thumbnail.jpg" alt="thumbnail" style="width:0vw;"/></div>
 
 </div>
 
