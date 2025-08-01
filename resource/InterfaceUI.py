@@ -1085,7 +1085,7 @@ class Ui_MainWindow(object):
         item.setText(_translate("MainWindow", "Status"))
         item = self.table_logger.horizontalHeaderItem(3)
         item.setText(_translate("MainWindow", "Note"))
-import resource_rc
+import resource.resource_rc
 
 
 if __name__ == "__main__":

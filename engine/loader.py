@@ -6,7 +6,7 @@ from ruamel.yaml import YAML, CommentedMap
 from PyQt5.QtWidgets import QApplication, QMessageBox, QTextEdit, QPushButton
 from PyQt5.QtGui import QDesktopServices
 from PyQt5.QtCore import QUrl
-from PyQt5.QtWebEngineWidgets import QWebEnginePage
+from PyQt5.QtWebEngineWidgets import QWebEnginePage, QWebEngineSettings
 import webbrowser
 
 from io import StringIO
@@ -61,8 +61,12 @@ def load_markdown(readMe):
         f.write(html)
 
     # base_path = QUrl.fromLocalFile(str(PROJECT_ROOT) + "/")
+    readMe.settings().setAttribute(QWebEngineSettings.PluginsEnabled, True)
+    readMe.settings().setAttribute(QWebEngineSettings.FullScreenSupportEnabled, True)
+    readMe.page().setAudioMuted(False)
     readMe.setPage(ExternalLinkPage(readMe))
     readMe.setUrl(QUrl.fromLocalFile(os.path.abspath(f"{markdown_path.stem}.html")))
+    # readMe.setUrl(QUrl("https://html5test.com/"))
     
 # ------------------------------------------------------------------
 #  Ruamel format, delete blank lines

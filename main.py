@@ -2,7 +2,7 @@
 #  Acknowledgements
 # ------------------------------------------------------------------
 # Mr. Hoang Duc Minh: Initial UI layout & logging table, Displaying camera captures, Gripper 3D model
-# Nguyen Phuoc Khang: improve main UI, HMI settings, configuration file managing, Cobot trajectory, Full system operation, Documentation, UI Tester, Project manager
+# Nguyen Phuoc Khang: improve main UI, settings UI, configuration file managing, Cobot trajectory, Full system operation, Documentation, UI Tester, Project manager
 # Tran Cao Cap: Battery detection, Aruco calibration, Defisheye, Refactor all system code, build executable, Documentation, -UX Tester, Project manager
 # Hoang Ngoc An, Mr. Ngo Tien Tu: Detection model training, Data gathering
 # All other interns: Data gathering, System assembly, Scratch code API
@@ -31,7 +31,7 @@ folder_cam = ldr.folder_cam
 DEBUG = ldr.usr_cfg["main"]["debug"]
 
 from resource.InterfaceUI import Ui_MainWindow
-from settings import MainWindow as settings_MainWindow
+from engine.settings import MainWindow as settings_MainWindow
 
 from worker.arm import Arm_worker
 from worker.cam_pos import CamPosition
@@ -404,7 +404,7 @@ if __name__ == "__main__":
 #  Acknowledgements # Put here for backup :))))
 # ------------------------------------------------------------------
 # Mr. Hoang Duc Minh: Initial UI layout & logging table, Displaying camera captures, Gripper 3D model
-# Nguyen Phuoc Khang: improve main UI, HMI settings, configuration file managing, Cobot trajectory, Full system operation, Documentation, UI Tester, Project manager
+# Nguyen Phuoc Khang: improve main UI, settings UI, configuration file managing, Cobot trajectory, Full system operation, Documentation, UI Tester, Project manager
 # Tran Cao Cap: Battery detection, Aruco calibration, Defisheye, Refactor all system code, build executable, Documentation, -UX Tester, Project manager
 # Hoang Ngoc An, Mr. Ngo Tien Tu: Detection model training, Data gathering
 # All other interns: Data gathering, System assembly, Scratch code API

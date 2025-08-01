@@ -78,7 +78,7 @@ main:
 
 # Acknowledgements
 # Mr. Hoang Duc Minh: Initial UI layout & logging table, Displaying camera captures, Gripper 3D model
-# Nguyen Phuoc Khang: improve main UI, HMI settings, configuration file managing, Cobot trajectory, Full system operation, Documentation, UI Tester, Project manager
+# Nguyen Phuoc Khang: improve main UI, settings UI, configuration file managing, Cobot trajectory, Full system operation, Documentation, UI Tester, Project manager
 # Tran Cao Cap: Battery detection, Aruco calibration, Defisheye, Refactor all system code, build executable, UX Tester, Project manager
 # Hoang Ngoc An, Mr. Ngo Tien Tu: Detection model training, Data gathering
 # All other interns: Data gathering, System assembly, Scratch code API

@@ -2279,7 +2279,7 @@ QPushButton[toggle=true] {
   <customwidget>
    <class>QCodeEditor</class>
    <extends>QTextEdit</extends>
-   <header location="global">QCodeEditor</header>
+   <header location="global">engine.QCodeEditor</header>
   </customwidget>
   <customwidget>
    <class>QWebEngineView</class>

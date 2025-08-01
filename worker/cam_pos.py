@@ -2,7 +2,7 @@ import numpy as np
 import time
 import cv2
 import multiprocessing as mp
-from camera.detection import BatteryLocator
+from engine.detection import BatteryLocator
 
 from PyQt5.QtCore import QThread, pyqtSignal
 from PyQt5.QtGui import QImage

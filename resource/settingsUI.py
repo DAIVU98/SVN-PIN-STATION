@@ -1127,7 +1127,8 @@ class Ui_MainWindow(object):
         self.btn_cancel.setText(_translate("MainWindow", "Cancel"))
         self.btn_apply.setText(_translate("MainWindow", "Apply"))
 from PyQt5 import QtWebEngineWidgets
-from QCodeEditor import QCodeEditor
+try: from engine.QCodeEditor import QCodeEditor
+except: from QCodeEditor import QCodeEditor
 
 
 if __name__ == "__main__":
