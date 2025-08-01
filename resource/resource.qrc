@@ -1,0 +1,52 @@
+<RCC>
+  <qresource prefix="images">
+    <file>images/camera.png</file>
+    <file>images/clock.png</file>
+    <file>images/control-system.png</file>
+    <file>images/image-gallery.png</file>
+    <file>images/logo.png</file>
+    <file>images/LogoJAKA.jpg</file>
+    <file>images/LogoJAKA-removebg-preview.png</file>
+    <file>images/logoSVN.png</file>
+    <file>images/low-battery.png</file>
+    <file>images/MiniCobot.jpg</file>
+    <file>images/MiniCobot-removebg-preview.png</file>
+    <file>images/start.png</file>
+    <file>images/stop-button.png</file>
+    <file>images/camera.png</file>
+    <file>images/control-system.png</file>
+    <file>images/image-gallery.png</file>
+    <file>images/logo.png</file>
+    <file>images/LogoJAKA.jpg</file>
+    <file>images/LogoJAKA-removebg-preview.png</file>
+    <file>images/logoSVN.png</file>
+    <file>images/low-battery.png</file>
+    <file>images/MiniCobot.jpg</file>
+    <file>images/MiniCobot-removebg-preview.png</file>
+    <file>images/start.png</file>
+    <file>images/stop-button.png</file>
+    <file>images/image-gallery.png</file>
+    <file>images/low-battery.png</file>
+    <file>images/camera.png</file>
+    <file>images/logo.png</file>
+    <file>images/LogoJAKA.jpg</file>
+    <file>images/LogoJAKA-removebg-preview.png</file>
+    <file>images/logoSVN.png</file>
+    <file>images/MiniCobot.jpg</file>
+    <file>images/MiniCobot-removebg-preview.png</file>
+    <file>images/LogoJAKA.jpg</file>
+    <file>images/MiniCobot.jpg</file>
+  </qresource>
+  <qresource prefix="icon">
+    <file>icon/close-x.svg</file>
+    <file>icon/mini.png</file>
+    <file>icon/mini.svg</file>
+    <file>icon/mini_2.png</file>
+    <file>icon/mini_2.svg</file>
+    <file>icon/settings.png</file>
+    <file>icon/settings_white.png</file>
+    <file>icon/svn logo cropped.png</file>
+    <file>icon/svn logo square.png</file>
+    <file>icon/svn logo.png</file>
+  </qresource>
+</RCC>

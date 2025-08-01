@@ -1,0 +1,28 @@
+[project]
+name = "fullbatteryinspection"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.2.1",
+    "numpy==2.2.6",
+    "omegaconf==2.3.0",
+    "opencv-contrib-python==4.11.0.86",
+    "psutil==7.0.0",
+    "torch==2.7.1",
+    "ultralytics==8.3.153",
+    "uv>=0.7.19",
+    "pyqt5==5.15.11",
+    "PyQt5-Qt5==5.15.2 ; sys_platform == 'win32'",
+    "PyQtWebEngine==5.15.7",
+    "PyQtWebEngine-Qt5==5.15.2",
+    "PyQt5-sip==12.*",
+    "opencv-python==4.11.0.86",
+    "ruamel-yaml>=0.18.14",
+    "markdown>=3.8.2",
+]
+
+[tool.uv]
+environments = ["sys_platform == 'win32' and platform_machine == 'AMD64'"]
+
+constraint-dependencies = ["PyQt5-Qt5==5.15.2"]

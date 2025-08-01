@@ -1,0 +1,82 @@
+mini: # Mini Cobot --> Already tuned, too much coffee
+  0: # slave, arm 1
+    ip: 192.168.31.15
+    arm_default_pos: [90, 30, 60, 0, 90, -180] # Homing position
+    tcp_default_pos: [0, 0, 10, -180, 0, 0] # VAC position
+    tcp_end_pos: [240, 470, 300, 90, 180, -180] # Cam Shot capture position
+    tcp_transfer_pos: [300, 470, 100, 180, 0, 0] # Transfer to Arm 2 position
+    tcp_offset: [-42, 9.5, 110, 0, 0, 0] # Offset for VAC
+    user_coord: [249, -515, -30, 0, 0, 90] # Calibrated Oxyz reference point
+    tool: 3 # DO4 cabinet
+    speed: 500.0 # mm/s
+    speed_rad: 10.0 #rad/s
+    accel: 1500.0 # mm/s^2
+    accel_rad: 5.0 # rad/s^2
+  # Yipee
+  1: # master, arm 2
+    ip: 192.168.31.16
+    arm_default_pos: [45, 30, 60, 0, 90, 0] # Homing position
+    tcp_default_pos: [0, 0, 0, 0, 0, 0] # Don't need, it's only here to avoid bug
+    tcp_end_pos: [253, 460, 293, -90, 0, -180] # Cam Shot capture position
+    tcp_transfer_pos: [305, 466, 96, -90, 0, -180] # Arm 2 get battery from Arm 1
+    tcp_offset: [0, 0, 140, 0, 0, 0] # Offset for gripper tip
+    user_coord: [901, -515, -30, 0, 0, 90] # Calibrated Oxyz reference point
+    tool: 1 # DO2 tool
+    speed: 500.0 # mm/s
+    speed_rad: 10.0 #rad/s
+    accel: 1500.0 # mm/s^2
+    accel_rad: 5.0 # rad/s^2
+  # Pick up zone limits
+  max_x: 275.0
+  min_x: 100.0
+  max_y: 140.0
+  min_y: 42.0
+
+# Battery matrix for Arm 2
+batt_matrix: batt_matrix.npy
+matrix:
+  start:
+    x: 169
+    y: 795
+  start_offset:
+    x: 25
+    y: 30
+  batt_size:
+    x: 26
+    y: 17
+  batt_spacing:
+    x: 50
+    y: 25
+
+# Cameras
+cam_pos:
+  idx: 0
+  # Detect
+  camera_calib: calib_480.npz
+  detect_model: bestpinv5.pt
+  short_edge: 26.5 # The short side of the 9V battery
+  conf: 0.7 # Detection confidence threshold
+  # Aruco
+  tag_size: 22.0
+  tray_width: 167.0
+  tray_length: 258.0
+  tag_ids: [0, 1, 2, 3]
+  # Display
+  show_masks: 1 # Show detection masks
+  guard_px: 5 # Smoothing pixel
+cam_shot:
+  idx: 1
+
+main:
+  frame_to_avg: 12
+  debug: 1
+# Network configuration
+#slave: 192.168.31.15
+#master: 192.168.31.16
+#pc: 192.168.31.20
+# Acknowledgements
+# Mr. Hoang Duc Minh: Initial UI layout & logging table, Displaying camera captures, Gripper 3D model
+# Nguyen Phuoc Khang: improve main UI, HMI settings, configuration file managing, Cobot trajectory, Full system operation, Documentation, UI Tester, Project manager
+# Tran Cao Cap: Battery detection, Aruco calibration, Defisheye, Refactor all system code, build executable, UX Tester, Project manager
+# Hoang Ngoc An, Mr. Ngo Tien Tu: Detection model training, Data gathering
+# All other interns: Data gathering, System assembly, Scratch code API
