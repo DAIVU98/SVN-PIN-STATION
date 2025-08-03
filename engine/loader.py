@@ -3,7 +3,7 @@ import os, sys
 import re
 import numpy as np
 from ruamel.yaml import YAML, CommentedMap
-from PyQt5.QtWidgets import QApplication, QMessageBox, QTextEdit, QPushButton
+from PyQt5.QtWidgets import QApplication, QMessageBox, QPushButton
 from PyQt5.QtGui import QDesktopServices
 from PyQt5.QtCore import QUrl
 from PyQt5.QtWebEngineWidgets import QWebEnginePage, QWebEngineSettings

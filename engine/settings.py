@@ -2,7 +2,6 @@ import multiprocessing as mp
 from copy import deepcopy
 from io import StringIO
 import sys
-from PyQt5.QtGui import QPixmap
 from PyQt5.QtWidgets import (
     QApplication,
     QMainWindow,
