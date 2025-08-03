@@ -8,7 +8,7 @@
 
 <!-- PROJECT LOGO -->
 <br />
-  <img src="./assets/logoSVN-cropped.png" alt="Logo" style="width:200vw">
+  <img src="./assets/logoSVN-cropped.png" alt="Logo" style="width:40vw">
 
 <h3 align="center">Battery Sorting Station - SVN Automation</h3>
   <p align="center">

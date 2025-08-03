@@ -8,7 +8,7 @@ cmd = [
     pyinstaller,
     "main.py",
     "--noconfirm",
-    "--noconsole",
+    "--console",
     "--onedir",
     "--clean",
     "--name", "FullBatteryApp",
