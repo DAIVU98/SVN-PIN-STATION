@@ -424,7 +424,10 @@ if __name__ == "__main__":
     
     mp.freeze_support()
     mp.set_start_method("spawn", force=True)
-    from engine import task_kill
+
+    # This is for running settings.py without running main.py
+    try: from engine import task_kill
+    except: import task_kill
     task_kill.clean()
     
     arm1_status = mp.Manager().dict({

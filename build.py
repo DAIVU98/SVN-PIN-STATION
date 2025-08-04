@@ -8,7 +8,7 @@ cmd = [
     pyinstaller,
     "main.py",
     "--noconfirm",
-    "--console",
+    "--noconsole", # Put "--console" if you want to debug the app
     "--onedir",
     "--clean",
     "--name", "FullBatteryApp",

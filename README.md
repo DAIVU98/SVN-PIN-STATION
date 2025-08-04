@@ -22,27 +22,26 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary style="font-size: 20px; font-weight: 500;">Table of Contents</summary>
+  <summary style="font-size: 20px; font-weight: 500;">📚 Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#📦-about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#🧰-built-with">Built With</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#🐢-getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#🛠️-prerequisites">Prerequisites</a></li>
+        <li><a href="#🚀-installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#⚙️-station-setup">Station Setup</a></li>
+    <li><a href="#🧪-calibration-procedure">Calibration Procedure</a></li>
+    <li><a href="#🛠️-extra-calibration-procedure">Extra Calibration Procedure</a></li>
+    <li><a href="#📞-contact">Contact</a></li>
+    <li><a href="#🙏-acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -161,7 +160,7 @@ Follow these steps to set up and run the application:
 3. **Run the application**  
    Inside the extracted folder, double-click `FullBatteryApp.exe` to launch the program.
 
-## ⚙️ Statiom Setup
+## ⚙️ Station Setup
 
 ### Preparation
 
@@ -266,7 +265,7 @@ The system consists of **two cameras**:
 - How to visualize the coordinate system:
 
   - Take Arm 1's X axis and draw a perpendicular Y axis counter-clockwise from the X axis. Click [here](https://automaticaddison.com/coordinate-frame-basics-and-the-right-hand-rule-of-robotics/) for the right-hand rule representation of the Oxyz coordinate system (Cartesian).
-  - The Z axis is perdendicular to both X and Y axes, pointing upwards (This can be visualized in the original JAKA App)
+  - The Z axis is perpendicular to both X and Y axes, pointing upwards (This can be visualized in the original JAKA App)
   - The original user coordinate sits right where the Arm's coordinate system is at (the one you just visualized)
   - Move forward the **X axis** by **249mm** and move downward the **Y axis** by **515mm**, push down the **Z axis** by **30mm**.
   - This leaves you with a coordinate system offset by **`[249, -515, -30]`**.
